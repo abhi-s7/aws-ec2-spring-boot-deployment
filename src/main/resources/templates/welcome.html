@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC2 Deployment</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello <span th:text="${name}">User</span>!</h1>
+        <p>Spring Boot application is successfully running on AWS EC2!</p>
+        
+        <div class="info">
+            <h3>Information:</h3>
+            <p><span class="label">Client IP Address:</span> <span class="value" th:text="${clientIp}">0.0.0.0</span></p>
+            <p><span class="label">User Agent:</span> <span class="value" th:text="${userAgent}">Unknown</span></p>
+        </div>
+    </div>
+</body>
+</html>
